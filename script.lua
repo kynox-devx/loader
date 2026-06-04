@@ -1,4 +1,4 @@
-local LOADER_URL = "https://www.kynoxhub.pro/wl/loader.lua"
+local LOADER_URL = "https://api.kynoxhub.pro/wl/loader.lua"
 
 local UserInputService = game:GetService("UserInputService")
 local isMobile = UserInputService.TouchEnabled
@@ -8,6 +8,7 @@ local requestFn = (syn and syn.request)
     or (http and http.request)
     or request
     or http_request
+    or httprequest
 
 local function cacheBust(url)
     local sep = string.find(url, "?", 1, true) and "&" or "?"
