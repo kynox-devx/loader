@@ -1,4 +1,4 @@
-local LOADER_URL = "https://api.kynoxhub.pro/wl/loader.lua"
+local LOADER_URL = "https://api.kynoxhub.pro/api/wl/loader"
 
 local UserInputService = game:GetService("UserInputService")
 local isMobile = UserInputService.TouchEnabled
